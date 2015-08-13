@@ -1,5 +1,6 @@
 
-BUNDLE_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+BUNDLE_DIR=$SCRIPT_DIR/../
 
 export JAVAC=
 export JAVA_HOME=
@@ -11,6 +12,8 @@ export LANG=C
 export ANT=$BUNDLE_DIR/ant/bin/ant
 export PATH=$PATH:$BUNDLE_DIR/ant/bin
 
+export CC=arm-linux-gnueabihf-gcc
+export CXX=arm-linux-gnueabihf-g++
 export ALT_BOOTDIR=$BUNDLE_DIR/jdk7
 export BUILD_ARCH_DIR=arm
 export ZERO_BUILD=true
