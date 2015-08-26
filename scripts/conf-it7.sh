@@ -9,9 +9,6 @@ BUNDLE_DIR=$SCRIPTS_DIR/../
     --with-rhino=$BUNDLE_DIR/rhino/js.jar \
     --disable-bootstrap \
     --disable-bootstrap-tools \
-    --disable-system-gtk \
-    --disable-system-gio \
     --disable-compile-against-syscalls \
-    --disable-system-gconf \
     --disable-docs
     
